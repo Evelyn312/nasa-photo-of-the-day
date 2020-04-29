@@ -3,7 +3,8 @@ import React from "react";
 const Date = props => {
     return(
         <div>
-            <p>{props.date}</p>
+            
+            <p>Today's Date: {props.date}</p>
         </div>
     );
 

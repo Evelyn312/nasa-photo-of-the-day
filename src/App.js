@@ -4,6 +4,7 @@ import axios from "axios";
 import Picture from "./components/Picture";
 import Date from "./components/Date";
 import Explanation from "./components/Explanation";
+import InputDate from "./components/InputDate";
 
 
 
@@ -21,15 +22,16 @@ useEffect(() => {
     });
 },[]);
 
-  console.log("test nasa data", nasa);
+  // console.log("test nasa data", nasa);
   return (
     <div className="App">
       <p>
         Read through the instructions in the README.md file to build your NASA
         app! Have fun <span role="img" aria-label='go!'>🚀</span>!
       </p>
-      
+   
       <Date date={nasa.date}/>
+      <InputDate />
       <Picture image={nasa.hdurl}/>
       <Explanation explanation={nasa.explanation}/>
       
