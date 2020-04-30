@@ -1,13 +1,14 @@
 import React from "react";
 
-const InputDate = props => {
-    // const [input, setInput]= useState("");
+const InputDate = (props) => {
+    
+
     return(
         <div>
-            <form>
+            <form onSubmit={props.submitDataEntered}>
                 <label>
-                    Please input date in YYYY-MM-DD format:
-                    <input type="text" value={props.inputDate} />
+                    Please select a date:
+                    <input type="date" value={props.dateEntered} onChange={props.onInputChange}/>
                 </label>
                 <input type="submit" value="Submit" />
             </form>
