@@ -5,8 +5,13 @@ import Picture from "./components/Picture";
 import Date from "./components/Date";
 import Explanation from "./components/Explanation";
 import InputDate from "./components/InputDate";
+import styled from "styled-components";
 
-
+const HeaderStyle = styled.h1`
+  font-size: 45px;
+  color: green;
+  font-weight: bold;
+`;
 
 function App() {
   const [nasa, setNasa] = useState({});
@@ -37,12 +42,13 @@ useEffect(() => {
 
   return (
     <div className="App">
-      <p>
+      {/* <p>
         Read through the instructions in the README.md file to build your NASA
         app! Have fun <span role="img" aria-label='go!'>🚀</span>!
-      </p>
+      </p> */}
+      <HeaderStyle>Photo Of The Day!</HeaderStyle>
    
-      <Date dateforToday={nasa.date}/>
+      <Date dateForToday={nasa.date}/>
       <InputDate dateEntered={dateEntered} onInputChange={onInputChange} submitDataEntered={submitDataEntered}/>
       
       <Picture image={nasa.hdurl}/>

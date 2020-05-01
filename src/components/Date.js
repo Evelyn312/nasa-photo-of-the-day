@@ -1,10 +1,17 @@
 import React from "react";
+import styled from "styled-components";
 
+
+const TodayDateStyle = styled.h2` 
+color: #0000b3;
+font-weight: bolder;
+
+`;
 const Date = props => {
+
     return(
         <div>
-            
-            <p>Today's Date: {props.date}</p>
+            <TodayDateStyle>Today's Date:{props.dateForToday}</TodayDateStyle>
         </div>
     );
 

@@ -1,9 +1,15 @@
 import React from "react";
+import styled from "styled-components";
+
+const ImageStyle = styled.img`
+    width: 720px;
+    margin: 90px;
+`;
 
 const Picture = props => {
     return (
         <div>
-           <img src={props.image} alt="Pic of The Day"></img> 
+           <ImageStyle src={props.image} alt="Pic of The Day"></ImageStyle> 
         </div>
     );
 };
