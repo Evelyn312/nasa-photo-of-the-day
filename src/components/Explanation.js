@@ -3,7 +3,8 @@ import styled from "styled-components";
 
 const ExplainStyle = styled.p`
     width: 720px;
-    text-align: center;
+    margin: 0 auto;
+
 
 `;
 
